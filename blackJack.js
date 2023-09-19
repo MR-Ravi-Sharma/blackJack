@@ -17,8 +17,10 @@ const player = {
   chips: 555, // default chips
 };
 // Need to render player info 
-player.name = prompt("ENTER YOUR NAME!" , "Guest")
-playerEl.textContent = player.name + ": $" + player.chips;
+setTimeout(() => {
+  player.name = prompt("ENTER YOUR NAME!" , "Guest")
+  playerEl.textContent = player.name + ": $" + player.chips;
+}, 1000);
 
 // random function to get RandomNumbers
 function getRandomCard() {
